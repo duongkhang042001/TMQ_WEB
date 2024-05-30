@@ -1,7 +1,13 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset default margins and paddings */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,27 +15,38 @@ body {
     background-color: #98fb98;
 }
 
+/* Container styling */
 .inner-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 90%;
     max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo styling */
 .logo,
 .logo-child {
-    width: 60%;
+    width: 100%;
+    max-width: 200px;
     height: auto;
     margin-bottom: 20px;
 }
 
+/* Label styling */
 .label {
     margin-bottom: 5px;
     font-size: 16px;
     font-weight: bold;
+    text-align: left;
+    width: 100%;
 }
 
+/* Input field styling */
 .input,
 .custom-input {
     width: 100%;
@@ -37,13 +54,16 @@ body {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
+/* Custom input field for percentage */
 .custom-input {
     width: 30%;
+    flex: 1;
 }
 
+/* Button styling */
 .btn {
     width: 100%;
     padding: 10px;
@@ -59,22 +79,52 @@ body {
     background-color: #cc0000;
 }
 
+/* Result text styling */
 .result-text {
     font-size: 18px;
     margin-top: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
+/* Watermark styling */
 .water-mark {
     margin-top: 20px;
-    text-align: right;
+    text-align: center;
     width: 100%;
 }
 
+/* Top input container styling */
 .top-input-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     margin-bottom: 20px;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .inner-container {
+        padding: 15px;
+    }
+
+    .label,
+    .result-text {
+        font-size: 14px;
+    }
+
+    .input,
+    .custom-input,
+    .btn {
+        font-size: 16px;
+    }
+
+    .custom-input {
+        width: 40%;
+    }
+
+    .btn {
+        padding: 8px;
+    }
 }
