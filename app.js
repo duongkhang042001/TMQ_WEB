@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const calculatorContainer = document.getElementById("calculator-container");
 
     const calculateButton = document.getElementById("calculate-button");
+    const refreshButton = document.getElementById("refresh-button");
     const widthInput = document.getElementById("width-input");
     const aspectRatioInput = document.getElementById("aspect-ratio-input");
     const rimDiameterInput = document.getElementById("rim-diameter-input");
@@ -20,6 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             alert("Vui lòng nhập đúng mật khẩu.");
         }
+    });
+
+    refreshButton.addEventListener("click", function () {
+        widthInput.value = "";
+        aspectRatioInput.value = "";
+        rimDiameterInput.value = "";
     });
 
     calculateButton.addEventListener("click", function () {
