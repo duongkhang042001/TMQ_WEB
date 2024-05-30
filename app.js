@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
         widthInput.value = "";
         aspectRatioInput.value = "";
         rimDiameterInput.value = "";
+        resultTread.textContent = "";
+        resultSidewall.textContent = "";
     });
 
     calculateButton.addEventListener("click", function () {
