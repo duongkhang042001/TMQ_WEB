@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const loginButton = document.getElementById("login-button");
-    const passwordInput = document.getElementById("password-input");
-    const loginContainer = document.getElementById("login-container");
+  
     const calculatorContainer = document.getElementById("calculator-container");
 
     const calculateButton = document.getElementById("calculate-button");
@@ -12,16 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const customSprayTimeInput = document.getElementById("custom-spray-time");
     const resultTread = document.getElementById("result-tread");
     const resultSidewall = document.getElementById("result-sidewall");
-
-    loginButton.addEventListener("click", function () {
-        const password = passwordInput.value.trim();
-        if (password === "TMQtg0856131313") {
-            loginContainer.style.display = "none";
-            calculatorContainer.style.display = "block";
-        } else {
-            alert("Vui lòng nhập đúng mật khẩu.");
-        }
-    });
 
     refreshButton.addEventListener("click", function () {
         widthInput.value = "";
