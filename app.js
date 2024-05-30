@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  
-    const calculatorContainer = document.getElementById("calculator-container");
-
     const calculateButton = document.getElementById("calculate-button");
     const refreshButton = document.getElementById("refresh-button");
     const widthInput = document.getElementById("width-input");
